@@ -438,33 +438,49 @@
   dependencies:
     "randombytes" "^2.1.0"
 
-"should-equal@0.8.0":
-  "integrity" "sha512-rv701O2TmiTLfehYKFbOJ4OJpLBRlePXLvE8vfcxs3DwuYej67lUa/A7z6RBOWeSdDx2ThIih1h8G2YSkiulCw=="
-  "resolved" "https://registry.npmjs.org/should-equal/-/should-equal-0.8.0.tgz"
-  "version" "0.8.0"
+"should-equal@^2.0.0":
+  "integrity" "sha512-ZP36TMrK9euEuWQYBig9W55WPC7uo37qzAEmbjHz4gfyuXrEUgF8cUvQVO+w+d3OMfPvSRQJ22lSm8MQJ43LTA=="
+  "resolved" "https://registry.npmjs.org/should-equal/-/should-equal-2.0.0.tgz"
+  "version" "2.0.0"
   dependencies:
-    "should-type" "0.2.0"
+    "should-type" "^1.4.0"
 
-"should-format@0.3.2":
-  "integrity" "sha512-B4siojq9d+OOLEaRXvuq6bfq65pHIu6PqMkJ4g2df2o3O6XVdtNZ7yWe/snLgtd1rmZneDULCzTA6tMmec5y/A=="
-  "resolved" "https://registry.npmjs.org/should-format/-/should-format-0.3.2.tgz"
-  "version" "0.3.2"
+"should-format@^3.0.3":
+  "integrity" "sha512-hZ58adtulAk0gKtua7QxevgUaXTTXxIi8t41L3zo9AHvjXO1/7sdLECuHeIN2SRtYXpNkmhoUP2pdeWgricQ+Q=="
+  "resolved" "https://registry.npmjs.org/should-format/-/should-format-3.0.3.tgz"
+  "version" "3.0.3"
   dependencies:
-    "should-type" "0.2.0"
+    "should-type" "^1.3.0"
+    "should-type-adaptors" "^1.0.1"
 
-"should-type@0.2.0":
-  "integrity" "sha512-ixbc1p6gw4W29fp4MifFynWVQvuqfuZjib+y1tWezbjinoXu0eab/rXxLDP6drfZXlz6lZBwuzHJrs/BjLCLuQ=="
-  "resolved" "https://registry.npmjs.org/should-type/-/should-type-0.2.0.tgz"
-  "version" "0.2.0"
-
-"should@^8.3.1":
-  "integrity" "sha512-esuzfKgt0DqCeFI9x9rGpb6MCQiZHR/2cAoLEaxAGUdReVbRla3BuLVVraaQLgBMXCoziRmaGxm/ohLhriCv9Q=="
-  "resolved" "https://registry.npmjs.org/should/-/should-8.4.0.tgz"
-  "version" "8.4.0"
+"should-type-adaptors@^1.0.1":
+  "integrity" "sha512-JA4hdoLnN+kebEp2Vs8eBe9g7uy0zbRo+RMcU0EsNy+R+k049Ki+N5tT5Jagst2g7EAja+euFuoXFCa8vIklfA=="
+  "resolved" "https://registry.npmjs.org/should-type-adaptors/-/should-type-adaptors-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    "should-equal" "0.8.0"
-    "should-format" "0.3.2"
-    "should-type" "0.2.0"
+    "should-type" "^1.3.0"
+    "should-util" "^1.0.0"
+
+"should-type@^1.3.0", "should-type@^1.4.0":
+  "integrity" "sha512-MdAsTu3n25yDbIe1NeN69G4n6mUnJGtSJHygX3+oN0ZbO3DTiATnf7XnYJdGT42JCXurTb1JI0qOBR65shvhPQ=="
+  "resolved" "https://registry.npmjs.org/should-type/-/should-type-1.4.0.tgz"
+  "version" "1.4.0"
+
+"should-util@^1.0.0":
+  "integrity" "sha512-oXF8tfxx5cDk8r2kYqlkUJzZpDBqVY/II2WhvU0n9Y3XYvAYRmeaf1PvvIvTgPnv4KJ+ES5M0PyDq5Jp+Ygy2g=="
+  "resolved" "https://registry.npmjs.org/should-util/-/should-util-1.0.1.tgz"
+  "version" "1.0.1"
+
+"should@^13.2.3":
+  "integrity" "sha512-ggLesLtu2xp+ZxI+ysJTmNjh2U0TsC+rQ/pfED9bUZZ4DKefP27D+7YJVVTvKsmjLpIi9jAa7itwDGkDDmt1GQ=="
+  "resolved" "https://registry.npmjs.org/should/-/should-13.2.3.tgz"
+  "version" "13.2.3"
+  dependencies:
+    "should-equal" "^2.0.0"
+    "should-format" "^3.0.3"
+    "should-type" "^1.4.0"
+    "should-type-adaptors" "^1.0.1"
+    "should-util" "^1.0.0"
 
 "string-width@^4.1.0", "string-width@^4.2.0":
   "integrity" "sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g=="
