@@ -6,12 +6,13 @@
 #define __MEMWATCH_HH
 
 #include <node.h>
+#include <nan.h>
 
 namespace memwatch
 {
-    v8::Handle<v8::Value> upon_gc(const v8::Arguments& args);
-    v8::Handle<v8::Value> trigger_gc(const v8::Arguments& args);
-    void after_gc(v8::GCType type, v8::GCCallbackFlags flags);
+    NAN_METHOD(upon_gc);
+    NAN_METHOD(trigger_gc);
+    void after_gc(v8::Isolate* isolate, v8::GCType type, v8::GCCallbackFlags flags);
 };
 
 #endif
