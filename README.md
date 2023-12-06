@@ -1,4 +1,6 @@
 `node-memwatch`: Leak Detection and Heap Diffing for Node.JS
+
+Original code was adapted for compilation under new versions of NodeJS
 ============================================================
 
 `node-memwatch` is here to help you detect and find memory leaks in
@@ -17,11 +19,11 @@ Node.JS code.  It provides:
 Installation
 ------------
 
-- `npm install node-memwatch`
+- `npm install node-memwatch-x`
 
 or
 
-- `git clone https://github.com/eduardbcom/node-memwatch.git`
+- `git clone https://github.com/ladeiko/node-memwatch.git`
 
 
 Description
@@ -32,10 +34,10 @@ usage in Node.JS applications, but there is still a need for a
 platform-independent native module that requires no special
 instrumentation.  This module attempts to satisfy that need.
 
-To get started, import `node-memwatch` like so:
+To get started, import `node-memwatch-x` like so:
 
 ```javascript
-var memwatch = require('node-memwatch');
+var memwatch = require('node-memwatch-x');
 ```
 
 ### Leak Detection
