@@ -70,10 +70,13 @@ static Local<Value> getLeakReport(size_t heapUsage)
     Nan::EscapableHandleScope scope;
 
     size_t growth = heapUsage - s_stats.leak_base_start;
-    int now = time(NULL);
+    time_t now = time(NULL);
     int delta = now - s_stats.leak_time_start;
 
     Local<Object> leakReport = Nan::New<v8::Object>();
+    Nan::Set(leakReport, Nan::New("start").ToLocalChecked(), Nan::New<v8::Date>(s_stats.leak_time_start * 1000).ToLocalChecked());
+    Nan::Set(leakReport, Nan::New("end").ToLocalChecked(), Nan::New<v8::Date>(now * 1000).ToLocalChecked());
+
     Nan::Set(leakReport, Nan::New("growth").ToLocalChecked(), Nan::New<v8::Number>(growth));
     // leakReport->Set(Nan::New("growth").ToLocalChecked(), Nan::New<v8::Number>(growth));
 
