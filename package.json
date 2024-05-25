@@ -1,15 +1,15 @@
 {
-  "name": "node-memwatch-x",
+  "name": "@johnbotapp/node-memwatch",
   "description": "Keep an eye on your memory usage, and discover and isolate leaks.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Siarhei Ladzeika (original code by Lloyd Hilaiel (http://lloyd.io))",
-  "homepage": "https://github.com/ladeiko/node-memwatch",
+  "homepage": "https://github.com/johnbotapp/node-memwatch",
   "engines": {
     "node": ">= 9"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ladeiko/node-memwatch.git"
+    "url": "https://github.com/johnbotapp/node-memwatch.git"
   },
   "main": "include.js",
   "licenses": [
